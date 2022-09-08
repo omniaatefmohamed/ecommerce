@@ -1,0 +1,12 @@
+.card img{
+    height:200px;
+}
+.card{
+    height: 440px!important;
+    margin-bottom: 20px;
+    position: relative;
+}
+.card button{
+    position: absolute;
+    bottom:20px
+}

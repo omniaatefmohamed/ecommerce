@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Product(props) {
     const {product} = props;
     function textLimit(elements, maxTextLength) {
@@ -8,7 +10,7 @@ function Product(props) {
         }
       }
       
-      textLimit(document.getElementsByClassName("paragraph-count"), 100);
+      textLimit(document.getElementsByClassName("paragraph-count"), 10);
     return (
         <>
             <div className="card">
@@ -16,7 +18,7 @@ function Product(props) {
                 <div className="card-body">
                     <h5 className="card-title">{product.title}</h5>
                     <p className="card-text paragraph-count">{product.description}</p>
-                    <button className="btn btn-primary">Go somewhere</button>
+                    <Link className="btn btn-primary" to={`/product/${product.id}`}>More Details</Link>
                 </div>
             </div>
         </>

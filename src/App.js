@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import Slider from "./components/Slider";
 import About from "./components/About";
+import ProductDetails from "./components/ProductDetails";
+
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
           <Products />
         </>} />
         <Route path="/about" element={<About />}/>
+        <Route path="/product/:productId" element={<ProductDetails />}/>
+
       </Routes>
 
     </div>
